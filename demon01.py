@@ -59,7 +59,7 @@ print(a)
 a.pop(4)
 print(a.pop(4))
 # print(a.clear())
-c = [0, 1, 2]s
+c = [0, 1, 2]
 a.extend(c)
 a.remove(4)
 print(a)

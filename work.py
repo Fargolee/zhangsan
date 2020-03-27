@@ -32,17 +32,65 @@
 """
 # 练习1
 # a = '红灯'
-for r in range(1, 31):
-    print('红灯', str(r) + 's', end='  ')
-print()
-for g in range(1, 36):
-    print('绿灯', str(g)+'s', end='  ')
-print()
-for y in range(1, 4):
-    print('黄灯', str(y)+'s', end='  ')
-print()
+# for r in range(1, 31):
+#     print('红灯', str(r) + 's', end='  ')
+# print()
+# for g in range(1, 36):
+#     print('绿灯', str(g)+'s', end='  ')
+# print()
+# for y in range(1, 4):
+#     print('黄灯', str(y)+'s', end='  ')
+# print()
+
+# light = {'红灯': 30, '绿灯': 35, '黄灯': 3}
+# # while True: 死循环
+# for i in light:
+#     for j in range(light[i]):  # j （0-30）
+#         print(i, '倒计时还有：', light[i]-j, '秒')  # light[i]-j 30-（0-30）倒计时
 
 # 练习2
-userinfo = {}
-username = input('请输入账号：')
-password = input('请输入密码：')
+# userinfo = {}
+# username = input('请输入账号：')
+# password = input('请输入密码：')
+# if 4 < len(username) < 9 and username.lower() == username:
+#     if 5 < len(password) < 13 and password.lower() == password.lower():
+#         userinfo[username.lower()] = password
+#     else:
+#         print('密码格式错误，请重新输入')
+# else:
+#     print('账号格式错误，请重新输入')
+# print(userinfo)
+
+# username = input('请输入账号：')
+# password = input('请输入密码：')
+# if len(username) >= 5 and len(username) <= 8:
+#     if username[0] == username[0].lower():
+#         if len(password) >= 8 and len(password) <= 12:
+#             print('注册成功')
+#         else:
+#             print('6-12')
+#         print('ok')
+#     else:
+#         print('首字母小写')
+# else:
+#     print('5-8位')
+#
+
+
+def regist():
+    username = input('请输入账号：')
+    password = input('请输入密码：')
+    if len(username) >= 5 and len(username) <= 8:
+        if username[0] is a['']:
+            # if username[0] == username[0].lower():
+            if len(password) >= 8 and len(password) <= 12:
+                print('注册成功')
+            else:
+                print('6-12')
+        else:
+            print('首字母小写')
+    else:
+        print('5-8位')
+
+
+regist()

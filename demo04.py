@@ -1,4 +1,4 @@
-# import dbtools  # 1
+import dbtools  # 1
 # from dbtools import chaxun  # 2
 from dbtools import Db
 
@@ -13,8 +13,12 @@ from dbtools import Db
 
 
 # 格式化字符串
-username = input('请输入账号：')
-password = input('请输入密码：')
-sql = "insert into t_user (username,password) values ('{}','{}');".format(
-    username, password)
-print(sql)
+# username = input('请输入账号：')
+# password = input('请输入密码：')
+
+# sql = "insert into t_user (username,password) values ('{}','{}');".format(
+#     username, password)
+# print(sql)
+b = Db.regist()
+db = Db("192.144.148.91", "ljtest", "123456", "ljtestdb")
+a = db.xiugai(b)

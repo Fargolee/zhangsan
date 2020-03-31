@@ -55,9 +55,22 @@ class Db:
         except Exception as e:
             return 'sql语句错误！', e
 
-
+    def regist(self, username, password):
+        username = input('请输入账号：')
+        password = input('请输入密码：')
+        if len(username) >= 5 and len(username) <= 8:
+            if username[0] in 'qazxswedcvfrtgbnhyujmkiolp':
+                # if username[0] == username[0].lower():
+                if len(password) >= 8 and len(password) <= 16:
+                    # return '注册成功'
+                    return "insert into t_user (username,password) values ('{}','{}');".format(
+                        username, password)
+                else:
+                    return '密码不符合规范'
+            else:
+                return '账号的首字母必须小写开头'
+        else:
+            return '账号不符合规范'
 # sql = "select * from t_user"
 # a = xiugai(sql)
 # print(a)
-
-c = '哈哈哈'

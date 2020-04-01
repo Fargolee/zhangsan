@@ -11,7 +11,7 @@ data = {
 res = requests.post(url=url,json=data)
 token = res.json()['data']['token']
 # print(token)
-with open("token.text",'w') as f:
+with open("token.txt",'w') as f:
     f.write(token)
 
 with open("token.text",'r') as f:
